@@ -24,19 +24,24 @@
                     </button>
                     <form>
                         <div class="form-control">
-                            <input type="text" placeholder="First Name" autocomplete="nope" />
+                            <input id="firstName" type="text" placeholder="First Name" autocomplete="nope" />
+                            <span></span>
                         </div>
                         <div class="form-control">
-                            <input type="text" placeholder="Last Name" autocomplete="nope" />
+                            <input type="text" id="lastName" placeholder="Last Name" autocomplete="nope" />
+                            <span></span>
                         </div>
                         <div class="form-control">
-                            <input type="email" placeholder="Email Address" autocomplete="nope" />
+                            <input type="email" id="email" placeholder="Email Address" autocomplete="nope" />
+                            <span></span>
+                            <!-- <span>Looks like this is not an email</span> -->
                         </div>
                         <div class="form-control">
-                            <input type="password" placeholder="Password" name="Password" id="password" autocomplete="nope" />
+                            <input type="password" id="password" placeholder="Password" name="Password" id="password" autocomplete="nope" />
+                            <span></span>
                         </div>
 
-                        <button class="submit-form">Claim your free trial</button>
+                        <button class="submit-form" type="submit">Claim your free trial</button>
                         <div class="copy">
                             <small>By clicking the button, you are agreeing to our <a>Terms and Services</a></small>
                         </div>
@@ -51,5 +56,6 @@
                 </p>
             </div>
         </footer>
+        <script src="./main.js"></script>
     </body>
 </html>

@@ -84,12 +84,42 @@ form {
 
 form input {
     padding: 18px 20px;
+    position: relative;
     font-size: 14px;
     border: 2px solid #dadada;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     border-radius: 5px;
     width: 100%;
     font-weight: 600;
+}
+
+.form-control {
+    margin-bottom: 0.5em;
+}
+
+.form-control span {
+    display: none;
+    text-align: right;
+    font-style: italic;
+    font-size: 13px;
+    color: var(--red);
+}
+
+.d-block {
+    display: block !important;
+}
+
+.input-error {
+    background-image: url(./images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
+    border: 2px solid var(--red);
+}
+
+input.input-error:focus {
+    outline: none;
+    border: 2px solid var(--red);
 }
 
 input:focus {
@@ -109,6 +139,10 @@ input:focus {
     font-weight: 600;
     letter-spacing: 1px;
     border-bottom: 5px solid #49ae84;
+}
+
+.submit-form:active {
+    background: #49ae84;
 }
 
 .btn-free {
